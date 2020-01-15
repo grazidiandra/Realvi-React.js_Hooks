@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { userParams } from 'react-router';
 import api from '../../service/Api';
 import Search from '../SearchCommits';
 import { ContainerCommits, ListCommits, StyledLink, Alert } from './style';
@@ -9,7 +8,6 @@ const Commits = (props) => {
   const [commits, setCommits] = useState([]);
   const [input, setInput] = useState('');
   const [error, setError] = useState('');
-  // const { value, name } = useParams();
   
   useEffect(() => {
     const { value, name } = props.match.params;
